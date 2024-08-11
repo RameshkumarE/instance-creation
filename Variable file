@@ -1,0 +1,35 @@
+variable "ubuntu1" {
+  description = "ubuntu version"
+  type        = string
+  default     = "ami-0c2af51e265bd5e0e"
+}
+
+variable "ubuntu2" {
+  description = "ubuntu version"
+  type        = string
+  default     = "ami-0c2af51e265bd5e0e"
+}
+
+variable "instance_name1" {
+  description = "tagged instance name"
+  type        = map(string)
+  default     = {
+    name     = "name1"
+
+  }
+}
+
+variable "instance_name2" {
+  description = "tagged instance name"
+  type        = map(string)
+  default     = {
+    name     = "name2"
+
+  }
+}
+
+variable "aws_region" {
+  description = "AWS region"
+  type        = string
+  default     = "ap-south-1"
+}
